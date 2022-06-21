@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Metabase</title>
+    <link rel="stylesheet" href="./inline_js/init.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="https://store.metabase.com" id="store-link">
+        <img src="./inline_js/metabase-logo.svg" />
+        Metabase Store
+      </a>
+
+      <nav>
+        <a href="#">Docs</a>
+        <a href="#">Support</a>
+        <a href="#">Billing</a>
+      </nav>
+    </header>
+
+    <div id="left-side">
+      <div id="left-container">
+        <h1>We’re setting up your Metabase!</h1>
+        <h2>
+          It usually takes around 5 minutes. If you already use Metabase, you’ll be able to migrate your instance to Cloud.
+        </h2>
+
+        <div id="status">
+          5 minutes remaining…
+        </div>
+        <progress id="progress" max="100" value="0"/>
+      </div>
+    </div>
+
+    <div id="right-side">
+      <img src="inline_js/1.gif" id="animation" />
+      <p id="heading">Make decisions with data — no SQL required</p>
+    </div>
+
+    <script type="text/html" src="./inline_js/init.js"></script>
+  </body>
+</html>
