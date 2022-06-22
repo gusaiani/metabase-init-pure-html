@@ -21,12 +21,13 @@ a {
 
 h1 {
   font-size: 56px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
 h2 {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.8em;
   margin-bottom: 60px;
 }
@@ -66,8 +67,8 @@ header {
 #store-link {
   color: #509EE3;
   display: flex;
-  font-weight: 700;
   align-items: center;
+  font-weight: 700;
 }
 
 #store-link > img {
@@ -75,7 +76,8 @@ header {
   width: 20px;
 }
 
-nav > a {
+nav a {
+  font-weight: 700;
   margin-left: 30px;
   margin-right: 10px;
 }
