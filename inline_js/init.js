@@ -22,11 +22,8 @@ function switchAnimation(counter) {
   animation.className = "transparent";
   heading.className = "transparent";
 
-  // Wait for fade out of current animation
-  setTimeout(function() {
-    fadeInNewAnimation(counter);
-    updateHeading(counter);
-  }, 1000);
+  fadeInNewAnimation(counter);
+  updateHeading(counter);
 }
 
 function fadeInNewAnimation(counter) {

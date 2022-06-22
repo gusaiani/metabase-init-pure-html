@@ -116,7 +116,6 @@ progress[value]::-webkit-progress-value {
 }
 
 #animation {
-  transition: opacity 1000ms cubic-bezier(.165,.84,.44,1);
   width: 600px;
 }
 
