@@ -116,7 +116,7 @@ progress[value]::-webkit-progress-value {
 }
 
 #animation {
-  transition: opacity 300ms cubic-bezier(.165,.84,.44,1);
+  transition: opacity 1000ms cubic-bezier(.165,.84,.44,1);
   width: 600px;
 }
 
@@ -130,4 +130,3 @@ progress[value]::-webkit-progress-value {
   text-align: center;
   width: 100%;
 }
-

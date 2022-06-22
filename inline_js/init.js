@@ -2,7 +2,7 @@ const content = [
   "Make decisions with data — no SQL required",
   "Bring your charts and data into Slack",
   "Click on your charts to dive deeper",
-  "Click on column headings in your tables to explore them",
+  "Click on column headings in your tables to explore them"
 ];
 
 const animation = document.getElementById("animation");
@@ -15,7 +15,7 @@ function switcher() {
   setInterval(function() {
     counter++;
     switchAnimation(counter);
-  }, 10000);
+  }, 8000);
 }
 
 function switchAnimation(counter) {
@@ -26,7 +26,7 @@ function switchAnimation(counter) {
   setTimeout(function() {
     fadeInNewAnimation(counter);
     updateHeading(counter);
-  }, 300);
+  }, 1000);
 }
 
 function fadeInNewAnimation(counter) {
