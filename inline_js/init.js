@@ -15,21 +15,24 @@ function switcher() {
   setInterval(function() {
     counter++;
     switchAnimation(counter);
-  }, 8000);
+  }, 7000);
 }
 
 function switchAnimation(counter) {
-  animation.className = "transparent";
+  animation.className = "animation transparent";
   heading.className = "transparent";
 
-  fadeInNewAnimation(counter);
-  updateHeading(counter);
+  // Wait for fade out of current animation
+  setTimeout(function() {
+    fadeInNewAnimation(counter);
+    updateHeading(counter);
+  }, 1000);
 }
 
 function fadeInNewAnimation(counter) {
   const srcPrefix = (counter % content.length) + 1;
 
-  animation.className = "";
+  animation.className = "animation";
   animation.src = `inline_js/${srcPrefix}.gif`;
 }
 
