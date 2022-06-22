@@ -71,7 +71,7 @@ header {
 }
 
 #store-link > img {
-  margin-right: 20px;
+  margin-right: 14px;
   width: 20px;
 }
 
@@ -104,10 +104,10 @@ progress[value]::-webkit-progress-value {
 .heading {
   box-shadow: 0px 5px 6px rgba(80, 158, 227, 0.16), 0px 12px 24px rgba(148, 154, 171, 0.08);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: 30px;
-  padding: 7px 20px;
+  padding: 4px 20px;
   text-align: center;
   opacity: 1;
   transition: opacity 800ms cubic-bezier(.165,.84,.44,1);
