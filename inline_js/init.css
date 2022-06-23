@@ -32,7 +32,7 @@ h2 {
   margin-bottom: 60px;
 }
 
-div#left-side {
+#left-side {
   border-right: 1px solid #F0F0F0;
   float: left;
   min-height: calc(100vh - 80px);
@@ -41,12 +41,13 @@ div#left-side {
   width: 50%;
 }
 
-div#left-container {
+#left-container {
   padding: 0 172px;
+  margin: 0 auto;
   max-width: 758px;
 }
 
-div#right-side {
+#right-side {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -126,6 +127,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .animation {
+  max-width: 100%;
   opacity: 1;
   transition: opacity 800ms cubic-bezier(.165,.84,.44,1);
   width: 600px;
@@ -140,4 +142,33 @@ progress[value]::-webkit-progress-value {
   margin-top: auto;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (max-width: 72em) {
+  #left-side {
+    border-bottom: 1px solid #F0F0F0;
+    min-height: 0;
+    padding: 80px 0 80px;
+    width: 100%;
+  }
+
+  #left-container {
+    max-width: 410px;
+    padding: 0;
+  }
+
+  #right-side {
+    margin-top: -80px;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .animation {
+    mix-blend-mode: multiply;
+    max-width: 80%;
+  }
+
+  #heading {
+    margin-bottom: 60px;
+  }
 }
