@@ -43,6 +43,7 @@ div#left-side {
 
 div#left-container {
   padding: 0 172px;
+  max-width: 758px;
 }
 
 div#right-side {
