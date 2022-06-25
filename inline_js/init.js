@@ -8,6 +8,7 @@ const content = [
 const animation = document.getElementById("animation");
 const heading = document.getElementById("heading");
 const progressElement = document.getElementById("progress");
+const status = document.getElementById("status");
 
 const fadeTimeInMilliseconds = 1000;
 let counter = 0;
@@ -66,6 +67,11 @@ function poll() {
             if (newValue !== progressElement.value) {
               progressElement.value = newValue;
             }
+
+            const minutesRemaining = Math.floor((100 - newValue) / 20);
+            const pluralizedMinute =
+              minutesRemaining > 1 ? "minutes" : "minute";
+            status.innerHTML = minutesRemaining + " " + pluralizedMinute + "…";
           }
         } catch (e) {}
         setTimeout(poll, 500);
