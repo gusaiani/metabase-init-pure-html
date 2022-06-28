@@ -44,7 +44,7 @@ function fadeInNewAnimation(counter) {
   const srcPrefix = (counter % content.length) + 1;
 
   animation.className = "animation";
-  animation.src = `inline_js/${srcPrefix}.gif`;
+  animation.src = `inline_js/${srcPrefix}.png`;
 }
 
 function updateHeading(counter) {
